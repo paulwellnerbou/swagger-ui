@@ -12,6 +12,7 @@ describe("typeCast", () => {
       tryItOutEnabled: "false",
       withCredentials: "true",
       filter: "false",
+      resolveModelsSubtreeOnExpand: "true",
     }
 
     const expectedConfig = {
@@ -19,6 +20,7 @@ describe("typeCast", () => {
       tryItOutEnabled: false,
       withCredentials: true,
       filter: false,
+      resolveModelsSubtreeOnExpand: true,
     }
 
     expect(typeCast(config)).toStrictEqual(expectedConfig)
@@ -87,6 +89,7 @@ describe("typeCast", () => {
       maxDisplayedTags: "null",
       defaultModelExpandDepth: {},
       defaultModelsExpandDepth: false,
+      resolveModelsSubtreeOnExpand: "invalid",
     }
 
     const expectedConfig = {
@@ -97,6 +100,7 @@ describe("typeCast", () => {
       maxDisplayedTags: -1,
       defaultModelExpandDepth: 1,
       defaultModelsExpandDepth: 1,
+      resolveModelsSubtreeOnExpand: false,
     }
 
     expect(typeCast(config)).toStrictEqual(expectedConfig)
