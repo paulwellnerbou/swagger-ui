@@ -25,9 +25,9 @@ export default class Models extends Component {
 
   handleToggle = (name, isExpanded) => {
     const { layoutActions, getConfigs } = this.props
-    const { resolveModelsSubtreeOnExpand = false } = getConfigs()
+    const { resolveSubtreeOnExpand = false } = getConfigs()
     layoutActions.show([...this.getSchemaBasePath(), name], isExpanded)
-    if (isExpanded && resolveModelsSubtreeOnExpand) {
+    if (isExpanded && resolveSubtreeOnExpand) {
       this.props.specActions.requestResolvedSubtree([...this.getSchemaBasePath(), name])
     }
   }

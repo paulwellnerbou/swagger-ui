@@ -31,7 +31,7 @@ const defaultOptions = Object.freeze({
   defaultModelRendering: "example",
   defaultModelExpandDepth: 1,
   defaultModelsExpandDepth: 1,
-  resolveModelsSubtreeOnExpand: false,
+  resolveSubtreeOnExpand: true,
   showExtensions: false,
   showCommonExtensions: false,
   withCredentials: false,

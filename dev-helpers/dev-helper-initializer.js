@@ -20,7 +20,8 @@ window.onload = function() {
     plugins: [
       SwaggerUIBundle.plugins.DownloadUrl
     ],
-    resolveModelsSubtreeOnExpand: false,
+    generateExamples: false,
+    resolveSubtreeOnExpand: false,
     // requestSnippetsEnabled: true,
     layout: "StandaloneLayout"
   })

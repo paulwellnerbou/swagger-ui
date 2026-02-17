@@ -41,7 +41,7 @@ describe("<Models/>", function(){
     getConfigs: () => ({
       docExpansion: "list",
       defaultModelsExpandDepth: 0,
-      resolveModelsSubtreeOnExpand: false
+      resolveSubtreeOnExpand: false
     })
   }
 
@@ -71,7 +71,7 @@ describe("<Models/>", function(){
       getConfigs: () => ({
         docExpansion: "list",
         defaultModelsExpandDepth: 0,
-        resolveModelsSubtreeOnExpand: false
+        resolveSubtreeOnExpand: false
       })
     }
 
@@ -95,7 +95,7 @@ describe("<Models/>", function(){
       getConfigs: () => ({
         docExpansion: "list",
         defaultModelsExpandDepth: 0,
-        resolveModelsSubtreeOnExpand: true
+        resolveSubtreeOnExpand: true
       })
     }
 

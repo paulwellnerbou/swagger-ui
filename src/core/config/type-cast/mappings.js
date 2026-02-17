@@ -88,9 +88,9 @@ const mappings = {
     typeCaster: booleanTypeCaster,
     defaultValue: defaultOptions.requestSnippetsEnabled,
   },
-  resolveModelsSubtreeOnExpand: {
+  resolveSubtreeOnExpand: {
     typeCaster: booleanTypeCaster,
-    defaultValue: defaultOptions.resolveModelsSubtreeOnExpand,
+    defaultValue: defaultOptions.resolveSubtreeOnExpand,
   },
   responseInterceptor: {
     typeCaster: functionTypeCaster,
